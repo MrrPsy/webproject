@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <div class="container">
+        <form id="bmiForm">
+            <label for="W">Weight (Kg):</label>
+            <span style="line-height: 0.4;" class="error" id="WError"></span>
+            <input type="number" id="W" placeholder="Enter weight">
+
+            <label for="A">Age:</label>
+            <span class="error" id="AError"></span>
+            <input type="number" id="A" placeholder="Enter age">
+
+            <label for="H">Height (m):</label>
+            <span class="error" id="HError"></span>
+            <input type="number" id="H" placeholder="Enter height in meters">
+
+            <label for="gender">Gender:</label>
+            <span class="error" id="genderError"></span>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+            </select>
+
+            <button type="button" onclick="calBMI()">Calculate</button>
+            <button type="button" onclick="clearForm()">Clear</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div class="footer">
+        FromSoftware.Inc<br>
+        All rights reserved to the owner<br>
+        Founded by Mr. Seyha and Co-founder Sophong
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
