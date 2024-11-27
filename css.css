@@ -7,11 +7,12 @@ body {
 }
 
 h1 {
+    font-family: Khmer OS Moul light;
+    color: #00d1b2;
     text-align: center;
-    margin-top: 20px;
-    color: #00ADB5;
-    font-family: Khmer;
-    padding: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #00d1b2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .container {
@@ -43,12 +44,17 @@ input, select, button {
     font-family: Khmer;
 
 }
+select{
+    width: 100%;
+    
+}
 
 button {
     background-color: #222831;
     color: #eee;
     cursor: pointer;
     border: none;
+    width: 100%;
 }
 
 button:hover {
@@ -68,7 +74,7 @@ button:hover {
     font-size: 16px;
     font-weight: bold;
     color: #28a745;
-    margin-left: 20px;
+    margin-left:15px;
     font-family: Khmer;
 }
 
@@ -80,7 +86,7 @@ button:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Responsive Design */
+/* Responsive សម្រាប់phone */
 @media screen and (max-width: 600px) {
     .container {
         margin: 10px;

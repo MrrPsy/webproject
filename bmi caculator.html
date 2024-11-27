@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="css.css">
+    
 </head>
 <body>
-    <h1>BMI Calculator</h1>
+    <h1>BMI Calculator<br>
+        គណនាសន្ទស្សន៍ម៉ាសរាងកាយ
+    </h1>
     <div class="container">
         <form id="bmiForm">
-            <label for="W">Weight (Kg):</label>
-            <span style="line-height: 0.4;" class="error" id="WError"></span>
-            <input type="number" id="W" placeholder="Enter weight">
+            <label for="W">ទម្លន់ (Kg):</label>
+            <span style="line-height: 2;" class="error" id="WError"></span>
+            <input type="number" id="W" placeholder="បញ្ចូលទម្ងន់របស់អ្នក">
 
-            <label for="A">Age:</label>
-            <span class="error" id="AError"></span>
-            <input type="number" id="A" placeholder="Enter age">
+            <label for="A">អាយុ:</label>
+            <span style="line-height: 2;" class="error" id="AError"></span>
+            <input type="number" id="A" placeholder="បញ្ចូលអាយុរបស់អ្នក">
 
-            <label for="H">Height (m):</label>
-            <span class="error" id="HError"></span>
-            <input type="number" id="H" placeholder="Enter height in meters">
+            <label for="H">កម្ពស់ (m):</label>
+            <span style="line-height: 2;" class="error" id="HError"></span>
+            <input type="number" id="H" placeholder="បញ្ចូលកម្ពស់របស់អ្នកគឹតជាម៉ែត្រ (100cm=1m)">
 
-            <label for="gender">Gender:</label>
-            <span class="error" id="genderError"></span>
+            <label for="gender">ភេទ:</label>
+            <span style="line-height: 2;" class="error" id="genderError"></span>
             <select id="gender">
-                <option value="">Select Gender</option>
-                <option value="m">Male</option>
-                <option value="f">Female</option>
+                <option value="">ជ្រើសរើសភេទ</option>
+                <option value="m">ប្រុស</option>
+                <option value="f">ស្រី</option>
             </select>
 
-            <button type="button" onclick="calBMI()">Calculate</button>
-            <button type="button" onclick="clearForm()">Clear</button>
+            <button type="button" onclick="calBMI()">គណនា</button>
+            <button type="button" onclick="clearForm()">សម្អាតទិន្នន័យ</button>
         </form>
         <div id="result"></div>
     </div>
     <div class="footer">
         FromSoftware.Inc<br>
+        Copyright © 2024
         All rights reserved to the owner<br>
-        Founded by Mr. Seyha and Co-founder Sophong
+        Founded by Mr. Seyha and Co-founder Mr.Sophong
     </div>
     <script src="calculator.js"></script>
 </body>
